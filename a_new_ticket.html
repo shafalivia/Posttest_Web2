@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="z_new_ticket.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <div class="container">
+        <div class="title">Registrasi Tiket Pasien</div>
+        <div class="konten">
+
+        <form action="#" id="form">
+            <div class="user-form">
+
+                <div class="input">
+                    <span class="detail">Nama Lengkap</span>
+                    <input id='nama' type="text" placeholder="Masukkan nama anda" required>
+                </div>
+
+                <div class="input">
+                    <span class="detail">Username</span>
+                    <input id='user' type="text" placeholder="Masukkan Username" required>
+                </div>
+
+                <div class="input">
+                    <span class="detail">Email</span>
+                    <input id='email' type="text" placeholder="Masukkan Email" required>
+                </div>
+
+                <div class="input">
+                    <span class="detail">No. Telp</span>
+                    <input id='telp' type="text" placeholder="Masukkan nomor telp" required>
+                </div>
+
+                <div class="input">
+                    <span class="detail">Alamat</span>
+                    <input id='alamat' type="text" placeholder="Masukkan alamat anda" required>
+                </div>
+
+                <div class="input">
+                    <span class="detail">Umur</span>
+                    <input id='umur' type="text" placeholder="Masukkan umur anda" required>
+                </div>
+
+                <div class="input-kel">
+                    <span class="detail">Keluhan</span>
+                    <input id='keluhan' type="text" placeholder="Masukkan keluhan secara singkat" required>
+                </div>
+            </div>
+
+            <!-- Radio -->
+            <div class="gender-fld">
+                <input type="radio" name="gender" id="dot-1" value="Laki-Laki">
+                <input type="radio" name="gender" id="dot-2" value="Perempuan">
+
+                <span class="title-gen">Jenis Kelamin</span>
+                <div class="pilih">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Laki-Laki</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Perempuan</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Text Area -->
+            <div class="textarea">
+                <textarea name="" id="alergi" cols="63" rows="1" placeholder="Alergi obat/konsumsi/keterangan lainnya"></textarea>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="kelas">
+                Kelas Pelayanan :
+                <input type="checkbox" class="box" name="kelas" id="s1" value="Kelas A">Kelas A
+                <input type="checkbox" class="box" name="kelas" id="s2" value="Kelas B">Kelas B
+                <input type="checkbox" class="box" name="kelas" id="s3" value="Kelas C">Kelas C
+            </div>
+
+            <!-- Select -->
+            <div class="select">
+                <select name="pembayaran" id="select">
+                    <option value="">Metode Pembayaran</option>
+                    <option value="Tunai">Tunai</option>
+                    <option value="Debit">Debit</option>
+                    <option value="QRIS">QRIS</option>
+                </select>
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Kirim Data"">
+            </div>
+        </form>
+        </div>
+    </div>
+
+<script src="js/form.js"></script>
+</body>
+</html>

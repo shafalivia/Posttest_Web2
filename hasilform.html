@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="hasilform.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><i class="material-icons">&#xe88e;</i><a href="a_userhome.html">Profil</a></li>
+                <li><i class="material-icons">&#xe54e;</i><a href="a_new_ticket.html">Tiket Pasien</a></li>
+                <li><i class="material-icons">&#xe87c;</i><a href="a_petugas.html">Petugas Kesehatan</a></li>
+                <li><a href="index.html" class="reset">LOG-OUT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="logout" id="logout">
+        <!-- <input type="reset" class="reset" value="LOG-OUT" > -->
+        <button type="reset" class="reset" id="logout">LOG-OUT</button>
+    </div>
+
+    <div class="box">
+        <div class="welcome">
+            <p>Halo user <span id="tampil-user"></span>!</p><br>
+            <p>Email      : <span id="tampil-email"></span></p><br>
+            <p>Nomor Telp : <span id="tampil-telp"></span></p><br>
+            <p>Alamat     : <span id="tampil-alamat"></span></p><br>
+            <p>Pembayaran : <span id="tampil-bayar"></span></p><br>
+            <p><span id="tampil-nama"></span>, berusia <span id="tampil-umur"></span>,</p><br>
+            <p><span id="tampil-gen"></span>, Memiliki keluhan <span id="tampil-keluhan"></span>.</p>
+            <p>Keterangan lainnya : <span id="tampil-alergi"></span></p>
+        </div>
+    </div>
+    <script src="js/hasilform.js"></script>
+</body>
+</html>

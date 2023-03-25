@@ -1,0 +1,123 @@
+@font-face {
+    font-family: KSS;
+    src: url(font/KSS.otf);
+}
+
+@font-face {
+    font-family: coco;
+    src: url(font/Coco.ttf);
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: absolute;
+    background-image: url(pic/back4.png);
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    font-family: KSS;
+}
+
+nav i {
+    position: relative;
+    padding-right: 10px;
+    color: #F07780;
+}
+
+nav ul {
+    flex: 1;
+    text-align: center;
+    padding-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: #F07780;
+    text-decoration: none;
+    position: relative;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3E0E09;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 50%;
+}
+
+nav ul li a:hover {
+    background: #fff6f6;
+    color: #3E0E09;
+}
+
+nav .reset {
+    position: relative;
+    border: none;
+    border-radius: 30px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    color: white;
+    background: #F07780;
+    cursor: pointer;
+    transition: .3s ;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: coco;
+    font-size: 20px;
+}
+
+.reset:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.box {
+    position: relative;
+    padding-left: 7%;
+}
+
+.welcome {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.664);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    display: inline-block;
+    align-items: center;
+    color: #F07780;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+.welcome p {
+    margin-bottom: 0px;
+}

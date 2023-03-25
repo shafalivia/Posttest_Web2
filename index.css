@@ -1,0 +1,129 @@
+@font-face {
+    font-family: KSS;
+    src: url(font/KSS.otf);
+}
+
+@font-face {
+    font-family: coco;
+    src: url(font/Coco.ttf);
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: absolute;
+    background-image: url(pic/back1.png);
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    font-family: KSS;
+}
+
+nav i {
+    position: relative;
+    padding-right: 10px;
+    color: #3E0E09;
+}
+
+nav ul {
+    flex: 1;
+    text-align: left;
+    padding-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: #3E0E09;
+    text-decoration: none;
+    position: relative;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3E0E09;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 50%;
+}
+
+nav ul li a:hover {
+    background: #fff6f6;
+    color: #3E0E09;
+}
+
+.text-box {
+    position: relative;
+    padding-top: 8%;
+    padding-left: 10%;
+    font-family: coco;
+    color: #3E0E09;
+}
+
+.text-box h1 {
+    font-size: 70px;
+    margin-top: 24px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.text-box p {
+    font-size: 20px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: left;
+    position: relative;
+    padding-left: 10%;
+    font-family: coco;
+    cursor: pointer;
+    transition: .3s ;
+}
+
+.link a {
+    color: #3E0E09;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.log:hover{
+    box-shadow: 3px 8px 22px rgb(129, 0, 141);
+}
+
+.daf:hover{
+    box-shadow: 3px 8px 22px rgb(129, 0, 141);
+}

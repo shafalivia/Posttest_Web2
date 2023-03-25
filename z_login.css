@@ -1,0 +1,109 @@
+@font-face {
+    font-family: coco;
+    src: url(font/Coco.ttf);
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: absolute;
+    background-image: url(pic/back2.png);
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    position: relative;
+    padding-left: 15%;
+    padding-top: 4%;
+    font-family: coco;
+}
+
+.container{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.875);
+    padding: 20px 70px 20px 31px;
+    border-radius: 12px;
+    text-align: justify;
+    box-shadow: 0 1px 13px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5.5%;
+}
+
+.container .submit-fld {
+    width: 300px;
+    padding-left: 20%;
+}
+
+header i{
+    color: #40A1AC;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    left: 43%;
+}
+
+.input-fld .input {
+    height: 60px;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 0 0 45px;
+    background: #40A1AC;
+    outline: none;
+}
+
+i{
+    position: relative;
+    top: -41px;
+    left: 15px;
+    color: #fff;
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+}
+
+.submit{
+    border: none;
+    border-radius: 30px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    color: #40A1AC;
+    background: #ffffff;
+    cursor: pointer;
+    transition: .3s ;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: coco;
+    font-size: 20px;
+}
+
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #40A1AC;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+label a{
+    text-decoration: none;
+    color: #000000;
+}
